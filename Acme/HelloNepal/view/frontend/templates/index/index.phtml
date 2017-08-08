@@ -1,0 +1,29 @@
+<h1>This is a demo Block Use</h1>
+<?php
+
+echo $block->sayHello();
+
+// Check if the route is Homepage
+if (!$block->isHomePage()) {
+    echo '<br>';
+    echo 'This is Not Homepage';
+    echo '<br>';
+}
+
+// Check if the current route is Secure
+if (!$block->isSecure()) {
+    echo '<br>';
+    echo 'Not Secure';
+    echo '<br>';
+}
+
+// Get Urls
+$block->getUrlViaStoreManagerObject();
+$block->getUrlViaUrlInterface();
+
+
+// Get the Block of Acme_ChangeProductImage
+//$block->getChangeProductImageBlock();
+
+print_r($block->getLogoDetails());
+?>

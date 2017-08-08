@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Acme_AdminMenu::helloworld" title="Hello World" module="Acme_AdminMenu" sortOrder="51" resource="Acme_AdminMenu::helloworld"/>
+        <add id="Acme_AdminMenu::post" title="Posts" module="Acme_AdminMenu" sortOrder="10"  resource="Acme_AdminMenu::post" parent="Acme_AdminMenu::helloworld"/>
+        <add id="Acme_AdminMenu::hello_configuration" title="Configuration" module="Acme_AdminMenu" sortOrder="99" parent="Acme_AdminMenu::helloworld"  resource="Acme_AdminMenu::helloworld_configuration"/>
+    </menu>
+</config>

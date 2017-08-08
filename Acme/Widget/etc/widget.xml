@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="Acme\Widget\Block\Widget\Posts" id="acme_widget_posts">
+		<label>Posts</label>
+		<description>Posts</description>
+		<parameters>
+			<parameter name="post_id" sort_order="10" visible="true" xsi:type="text">
+				<label>post_id</label>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

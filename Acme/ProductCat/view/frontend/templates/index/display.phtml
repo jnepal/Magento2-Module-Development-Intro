@@ -1,0 +1,32 @@
+<?php
+$productId = 730;
+
+$product = $block->getProductById($productId);
+
+echo 'Product Details';
+echo 'SKU: ' . $product->getSku();
+echo '<br>';
+echo 'Final Price: ' . $product->getFinalPrice();
+echo '<br>';
+echo 'Product URL: ' . $product->getProductUrl();
+echo '<br>';
+
+
+// Current Product
+$currentProduct =  $block->getCurrentProduct();
+
+$categoryIds = $product->getCategoryIds();
+
+$categories = $block->getCategoryCollection()
+                    ->addAttributeToFilter('entity_id', $categoryIds);
+
+foreach ($categories as $category) {
+    echo $category->getName();
+    echo '<br>';
+
+}
+
+echo 'Current Product' . $block->getCurrentProduct();
+echo '<br>';
+echo 'Current Category' . $block->getCurrentCategory();
+

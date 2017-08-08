@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<carriers>
+			<simpleshipping>
+				<model>Acme\Shipping\Model\Carrier\SimpleShipping</model>
+				<enable>1</enable>
+				<sallowspecific>0</sallowspecific>
+				<title>SimpleShipping</title>
+				<name>SimpleShipping</name>
+				<price>0.00</price>
+				<specificerrmsg>This shipping method is not available. To use this shipping method, please contact us.</specificerrmsg>
+			</simpleshipping>
+		</carriers>
+	</default>
+</config>

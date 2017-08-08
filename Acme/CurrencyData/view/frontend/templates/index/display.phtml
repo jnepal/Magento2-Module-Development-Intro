@@ -1,0 +1,22 @@
+<?php
+
+echo 'Current Currency Symbol' . $block->getCurrentCurrencySymbol();
+echo '<br>';
+
+echo 'Current Currency Code' . $block->getCurrentCurrencyCode();
+echo '<br>';
+
+echo 'Base Currency Code' . $block->getBaseCurrencyCode();
+echo '<br>';
+
+echo 'Default Currency Symbol' . $block->getDefaultCurrencySymbol();
+echo '<br>';
+
+echo 'Current Currency Rate' . $block->getCurrentCurrencyRate();
+echo '<br>';
+
+print_r($block->getAvailableCurrencyCodes());
+echo '<br>';
+
+print_r($block->getAllowedCurrencies());
+echo '<br>';

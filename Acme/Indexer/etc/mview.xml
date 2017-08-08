@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Mview/etc/mview.xsd">
+    <view id="example_indexer" class="Acme\Indexer\Model\Indexer\Test" group="indexer">
+        <subscriptions>
+            <table name="catlog_product_entity" entity_column="entity_id"></table>
+        </subscriptions>
+    </view>
+</config>
